@@ -7,17 +7,17 @@ public class Triangle {
  
     private double side1; 
     private double side2; 
-    private double side3; 
+    private double side3;
  
-    public Triangle(double side1, double side2, double side3) throws TriangleException { 
-        this.side1 = side1; 
-        this.side2 = side2; 
-        this.side3 = side3; 
+    public Triangle(double side1, double side2, double side3) throws TriangleException {
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
  
         if (allSidesAreZero() || hasImpossibleSides() || violatesTriangleInequality()) { 
-            throw new TriangleException(); 
+            throw new TriangleException();
         } 
-    } 
+    }
  
     public TriangleKind getKind() { 
         int uniqueSides = getNumberOfUniqueSides(); 
@@ -30,7 +30,7 @@ public class Triangle {
             return TriangleKind.ISOSCELES; 
         } 
  
-        return TriangleKind.SCALENE; 
+        return TriangleKind.SCALENE;
     } 
  
     private boolean allSidesAreZero() { 
