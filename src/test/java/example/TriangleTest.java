@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 
 public class TriangleTest {
 
-    @DisplayName("Test Triangle equilateral instanciation")
     @Test
     public void equilateralTriangleHaveEqualSides() throws Exception {
         Triangle triangle = new Triangle(2, 2, 2);
